@@ -81,5 +81,15 @@
 		<name>touch-item</name>
 		<path>/META-INF/tags/touch-item.tag</path>
 	</tag-file>
+	
+	<tag-file>
+		<name>sheet</name>
+		<path>/META-INF/tags/sheet.tag</path>
+	</tag-file>
+	
+	<tag-file>
+		<name>heading</name>
+		<path>/META-INF/tags/heading.tag</path>
+	</tag-file>
 	      
 </taglib>

@@ -29,7 +29,7 @@
 		<c:when test="${not empty plain}">
 		
 			<c:if test="${not empty title}">
-				<h1>${title}</h1>
+				<h2>${title}</h2>
 			</c:if>
 		
 			<div>
@@ -40,7 +40,7 @@
 		
 			<div class="topRow">
 				<c:if test="${not empty title}">
-					<h1>${title}</h1>
+					<h2>${title}</h2>
 				</c:if>
 				
 				<c:if test="${not empty backTitle and not empty backUrl and not empty backToWhat}">
