@@ -1,4 +1,26 @@
 var MVK = {
+		
+	GLOBAL : (function() {
+		var my = {};
+		
+		my.init = function(params) {
+			this.initHelpIconListener();
+		};
+		
+		my.initHelpIconListener = function() {
+			
+			$('.title-help-text').mouseover(function() {
+				$(this).next('img').addClass('open');
+			})
+			
+			$('.title-help-text').click(function(e) {
+				e.preventDefault();
+				$(this).closest('.heading-container').find('div.infoBox').toggle();
+			});
+		}
+		
+		return my;
+	})(),
 	
 	MENU : (function() {
 		

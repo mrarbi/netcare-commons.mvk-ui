@@ -28,6 +28,7 @@
 	<title>${title}</title>
 	
 	<c:set var="GLOB_CTX_PATH" value="${contextPath}" scope="request" />
+	<c:set var="GLOB_RESOURCE_PATH" value="${resourcePath}" scope="request" />
 	
 	<link rel="icon" href="<c:url value="/favicon.ico" />" type="image/vnd.microsoft.icon"/>
 	<link rel="stylesheet" href="${contextPath}${resourcePath}/css/bootstrap-2.2.1.min.css" />
@@ -48,6 +49,7 @@
 	<script type="text/javascript">
 	
 		$(function() {
+			MVK.GLOBAL.init();
 			MVK.MENU.init();
 		});
 	

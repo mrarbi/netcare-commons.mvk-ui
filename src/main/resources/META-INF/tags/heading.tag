@@ -21,12 +21,12 @@
 <%@ attribute name="description" required="false" %>
 <div class="heading-container">
 	<div class="toggleInfoBox">
-		<h3 class="title">${title}</h3>
-		<a href="#">
-			<img src="images/icons/info_iconblue.png" align="top" class="open" />
+		<h3 class="title" style="display: inline;">${title}</h3>
+		<a href="#" class="title-help-text">
+			<img src="${GLOB_CTX_PATH}${GLOB_RESOURCE_PATH}/images/icons/info_icon.png" align="top" />
 		</a>
 	</div>
-	<div class="infoBox" style="display: block;">
+	<div class="infoBox" style="display: none;">
 		<jsp:doBody />
 	</div>
 </div>
