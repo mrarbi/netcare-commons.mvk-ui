@@ -1,0 +1,620 @@
+/*********************************
+ * BoxShadowContainer
+ *********************************/
+ 
+ .containerBoxShadow>.bottom,
+ .containerBoxShadow>.top {
+	position: relative;
+	padding: 0 3px;
+}
+
+.containerBoxShadow>.top>.left,
+.containerBoxShadow>.top>.right,
+.containerBoxShadow>.top>.wrapper,
+.containerBoxShadow>.bottom>.left,
+.containerBoxShadow>.bottom>.right,
+.containerBoxShadow>.bottom>.wrapper {
+	background-image: url('../images/containerBackgrounds/boxShadowTopAndBottom.png');
+	background-repeat: no-repeat;
+	height: 2px;
+	width: 3px;
+}
+
+.containerBoxShadow>.bottom>.left,
+.containerBoxShadow>.bottom>.right,
+.containerBoxShadow>.bottom>.wrapper {
+	height: 4px;
+}
+
+.containerBoxShadow>.top>.left,
+.containerBoxShadow>.bottom>.left {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.containerBoxShadow>.top>.right,
+.containerBoxShadow>.bottom>.right {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.containerBoxShadow>.top>.wrapper {
+	background-repeat: repeat-x;
+	background-position: 0 -2px;
+	width: 100%;
+}
+
+.containerBoxShadow>.top>.left {
+	background-position: 0 0;
+}
+
+.containerBoxShadow>.top>.right {
+	background-position: 0 -4px;
+}
+
+.containerBoxShadow>.bottom>.wrapper {
+	background-position: 0 -10px;
+	background-repeat: repeat-x;
+	width: 100%;
+}
+
+.containerBoxShadow>.bottom>.left {
+	background-position: 0 -6px;
+}
+
+.containerBoxShadow>.bottom>.right {
+	background-position: 0 -14px;
+}
+
+.containerBoxShadow>.wrapper {
+	padding-right: 3px;
+	background-image:
+		url('../images/containerBackgrounds/boxShadowBodySec.png');
+	background-repeat: repeat-y;
+	background-position: right top;
+}
+
+.containerBoxShadow>.wrapper>.boxShadowBody {
+	background-image:
+		url('../images/containerBackgrounds/boxShadowBodyMain.png');
+	background-position: left;
+	background-repeat: repeat-y;
+	padding: 0px 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Container: Grey */
+.containerBoxShadow.grey > .top > .left,
+.containerBoxShadow.grey > .top > .right,
+.containerBoxShadow.grey > .top > .wrapper,
+.containerBoxShadow.grey > .bottom > .left,
+.containerBoxShadow.grey > .bottom > .right,
+.containerBoxShadow.grey > .bottom > .wrapper {
+	background-image:url('../images/containerBackgrounds/boxShadowTopAndBottom_grey.png');
+}
+
+.containerBoxShadow.grey > .wrapper {
+	background-image:url('../images/containerBackgrounds/boxShadowBodySec_grey.png');
+}
+
+.containerBoxShadow.grey > .wrapper > .boxShadowBody {
+	background-image:url('../images/containerBackgrounds/boxShadowBodyMain_grey.png');
+} 
+
+/* Container: PaperSheet */
+.containerBoxShadow.paperSheet>.wrapper>.boxShadowBody {
+	padding: 0px 3.3%;
+}
+
+.containerBoxShadow.paperSheet>.bottom {
+	height: 17px;
+	padding: 0 220px;
+}
+
+.containerBoxShadow.paperSheet>.bottom>.left,
+.containerBoxShadow.paperSheet>.bottom>.right {
+	height: 17px;
+	width: 220px;
+	background-image:url('../images/containerBackgrounds/paperSheetBottom.png');
+}
+
+.containerBoxShadow.paperSheet>.bottom>.left {
+	background-position: top left;
+}
+
+.containerBoxShadow.paperSheet>.bottom>.right {
+	background-position: top right;
+}
+
+/* Container: PaperSlip */
+.containerBoxShadow.paperSlip>.bottom {
+	padding-right: 158px;
+	height: 5px;
+}
+
+.containerBoxShadow.paperSlip>.bottom>.right {
+	background-image: url('../images/containerBackgrounds/paperSlipBottomRight.png');
+	background-position: right top;
+	width: 158px;
+	height: 11px;
+}
+.containerBoxShadow.paperSlip.grey >.bottom > .right {
+	background-image: url('../images/containerBackgrounds/paperSlipBottomRight_grey.png');
+}
+/******* Container: greyBluePaperSheet *******/
+.containerBoxShadow.greyBluePaperSheet>.top {
+	display: none;
+}
+
+.containerBoxShadow.greyBluePaperSheet>.wrapper {
+	background: none;
+}
+
+.containerBoxShadow.greyBluePaperSheet>.wrapper>.boxShadowBody {
+	padding: 0px 3.3%;
+	background: none;
+	background-color: #f2f2f2;
+	border: none;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.containerBoxShadow.greyBluePaperSheet>.bottom {
+	height: 17px;
+	padding: 0;
+}
+
+.containerBoxShadow.greyBluePaperSheet>.bottom>.left,
+.containerBoxShadow.greyBluePaperSheet>.bottom>.right
+	{
+	background-image: url('../images/containerBackgrounds/paperSheetBottom.png');
+	height: 17px;
+	width: 220px;
+}
+
+.containerBoxShadow.greyBluePaperSheet>.bottom>.wrapper {
+	display: none;
+}
+
+.containerBoxShadow.greyBluePaperSheet>.bottom>.left {
+	display: none;
+}
+
+.containerBoxShadow.greyBluePaperSheet>.bottom>.right {
+	background-position: right -3px;
+	margin-right: 3%;
+}
+
+/*************** Container: Frame *******************/
+.containerBoxShadow.frame>.top>.left,
+.containerBoxShadow.frame>.top>.right,
+.containerBoxShadow.frame>.top>.wrapper,
+.containerBoxShadow.frame>.bottom>.left,
+.containerBoxShadow.frame>.bottom>.right,
+.containerBoxShadow.frame>.bottom>.wrapper {
+	background-image: url('../images/containerBackgrounds/frameTopAndBottom.png');
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 17px;
+}
+
+.containerBoxShadow.frame>.wrapper {
+	padding-right: 3px;
+	background-image: url('../images/containerBackgrounds/frameBodySec.png');
+	background-repeat: repeat-y;
+	background-position: right top;
+}
+
+.containerBoxShadow.frame>.wrapper>.boxShadowBody {
+	background-image: url('../images/containerBackgrounds/frameBodyMain.png');
+	background-position: left;
+	background-repeat: repeat-y;
+	padding: 0 14px 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+.containerBoxShadow.frame>.bottom,
+.containerBoxShadow.frame>.top {
+	position: relative;
+	padding: 0 17px;
+}
+
+.containerBoxShadow.frame>.bottom>.left,
+.containerBoxShadow.frame>.bottom>.right,
+.containerBoxShadow.frame>.bottom>.wrapper {
+	height: 17px;
+}
+
+.containerBoxShadow.frame>.top>.left,
+.containerBoxShadow.frame>.bottom>.left {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.containerBoxShadow.frame>.top>.right,
+.containerBoxShadow.frame>.bottom>.right {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.containerBoxShadow.frame>.top>.wrapper {
+	background-repeat: repeat-x;
+	background-position: 0 -17px;
+	width: 100%;
+}
+
+.containerBoxShadow.frame>.top>.left {
+	background-position: 0 0;
+}
+
+.containerBoxShadow.frame>.top>.right {
+	background-position: 0 -35px;
+}
+
+.containerBoxShadow.frame>.bottom>.wrapper {
+	background-position: 0 -75px;
+	background-repeat: repeat-x;
+	width: 100%;
+}
+/*** start ***/
+.containerBoxShadow.frame>.bottom>.left {
+	background-position: 0 -55px;
+}
+
+.containerBoxShadow.frame>.bottom>.right {
+	background-position: 0 -96px;
+}
+.containerBoxShadow.frame.left{
+	width: 49%;
+	float: left;
+}
+
+.containerBoxShadow.frame.left.fullWidth{
+	width: 100%;
+	float: left;
+}
+
+.containerBoxShadow.frame.right{
+	width: 49%;
+	float: right;
+}
+
+/*********************************
+ * ItemList
+ *********************************/
+ 
+ ul.itemList {
+	list-style: none;
+	margin: 0 0 0 0;
+	margin-left: 0px;
+	padding: 0;
+}
+
+ul.itemList>li.item {
+	margin: 0;
+}
+
+ul.itemList>li.item.withIcon .listItemBase {
+	padding-left: 55px;
+	overflow: hidden;
+	min-height: 65px;
+}
+
+ul.itemList>li.item .boxShadowBody {
+	padding-left: 15px;
+}
+
+ul.itemList>li.item.withIcon .boxShadowBody {
+	padding-left: 0px;
+}
+
+ul.itemList>li.item.withNavigation .boxShadowBody {
+	padding-right: 40px;
+}
+
+ul.itemList>li.item .listItemBase h3,ul.itemList>li.item .listItemBase h4 {
+	margin: 5px 0;
+	color: #008391;
+	font-size: 0.9375em;
+	font-weight: bold;
+}
+
+li.item .subRow {
+	font-size: 0.9375em;
+}
+
+ul.itemList > li.item.withDetail .listItemBody {
+	background-image:none;
+}
+ul.itemList > .item.subRowOnTop.withDetail .mainBody {
+	padding-top: 1.5em;
+	padding-bottom: 5px;
+}
+ul.itemList > .item.subRowOnTop.withDetail .subRow {
+	top: 0.8em;
+}
+
+ul.itemList > li.item .headerWrapper,
+ul.itemList > li.item .togglerTarget {
+	padding-left:40px;
+}
+
+ul.itemList > li.item .headerWrapper {
+	border-top:1px solid #ccc;
+}
+
+ul.itemList > li.item .headerWrapper.open {
+	border-bottom:1px solid #ccc;
+}
+
+
+li.item a.mvkToggler {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: block;
+	width: 40px;
+	height: 100%;
+	padding:0;
+}
+
+li.item .itemNavigation {
+	position: absolute;
+	right: 0px;
+	top: 0;
+	display: block;
+	background-image: url('../images/listNavigationBgBlue.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 100%;
+	font-size: 0.975em
+}
+
+li.item a.moTile{
+	cursor: pointer;
+	background-image: url('../images/listNavigationBgDarkBlue.png');
+}
+
+li.item .listItemBody {
+	background-image: url('../images/listItemBodyBg.png');
+	background-position: right top;
+	background-repeat: repeat-y;
+	overflow: auto;
+	padding-bottom: 10px;
+}
+
+li.item .listItemBody .facilityResourceInfo{
+	font-size: 0.8em;
+	padding-left: 55px;
+	font-style: italic;
+}
+
+li.item .mainBody {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+li.item .itemStateText {
+	position: absolute;
+	display: block;
+	top: 0px;
+	right: 60px;
+	padding-bottom: 3px;
+	font-size: 0.75em;
+	font-weight: bold;
+	background-image: url('../images/shadow-btn.png');
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+li.item .itemStateText>.wrapper {
+	padding: 5px 13px;
+	display: block;
+	background-color: #fabd17;
+	background-image: url('../images/stateTextBg.png');
+	background-position: right center;
+	background-repeat: repeat-y;
+}
+
+/*** Disabled item ***/
+
+ul.itemList > li.item.disabled h3,
+ul.itemList > li.item.disabled h4 {
+	color:grey;
+}
+
+li.item.disabled .itemNavigation {
+	background-image:url('../images/listNavigationBg.png');
+}
+
+/*******************************
+ * SearchField
+ *******************************/
+
+.searchField {
+	overflow:auto;
+}
+
+.searchField input[type="text"],
+.searchField a {
+    display:block;
+    float:left;
+    background:none;
+    font-size:0.7895em;
+    height:1.6em;
+    line-height:1.6em;
+    margin:0;
+    background-color:#ededed;
+    border:1px solid #e0dfdd;
+}
+
+.searchField input[type="text"] {
+    border-right:0;
+    padding:3px 5px;
+    
+    -webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.searchField a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left:0;
+    padding:3px 0;
+    text-decoration:none;
+	
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.searchField a span {
+    border-left:1px solid white;
+    padding-left:15px;
+    padding-right:15px;
+    border-left:1px solid #e0dfdd;
+    font-weight:bold;
+}
+
+/*******************************
+ * TermsAccept
+ *******************************/
+.termsAccept label {
+	font-weight:bold;
+}
+.termsAccept label a {
+	font-weight:normal;
+}
+
+@media all and (max-width:800px) {
+	
+	/*********************************
+	 * BoxShadowContainer
+	 *********************************/
+		
+	.containerBoxShadow>.top>.left,
+	.containerBoxShadow>.top>.right,
+	.containerBoxShadow>.top>.wrapper {
+		height: 2px;
+	}
+	.containerBoxShadow.paperSheet>.bottom {
+		padding: 0 155px 0 155px;
+	}
+	.containerBoxShadow.paperSheet>.bottom>.left {
+		background-image:
+			url('../images/containerBackgrounds/paperSheetBottomBgLeft.png');
+		width: 155px;
+	}
+	.containerBoxShadow.papcherSheet>.bottom>.right {
+		background-image:
+			url('../images/containerBackgrounds/paperSheetBottomBgRight.png');
+		width: 155px;
+	}
+	
+	/*********************************
+	 * ItemList
+	 *********************************/	
+	ul.itemList>li.item.withNavigation .boxShadowBody {
+		padding-right: 20px;
+	}
+	ul.itemList>li.item .listItemBase {
+		padding-left: 10px;
+	}
+	ul.itemList>li.item.withDetail .listItemBase {
+		padding-left:0;
+	}
+	ul.itemList>li.item.withIcon .listItemBase {
+		padding-left: 55px;
+		min-height: 48px;
+	}
+	li.item .mainBody {
+		padding-bottom: 10px;
+		padding-top: 0px;
+	}
+	li.item a.mvkToggler {
+		width: 23px;
+	}
+	ul.itemList > li.item .headerWrapper,
+	ul.itemList > li.item .togglerTarget {
+		padding-left:35px;
+	}
+	li.item a.itemNavigation {
+		width: 20px;
+		background-image: url('../images/listNavigationBgBlueSmall.png');
+		background-position: center center;
+	}
+
+	li.item.unread .subRow {
+		padding-right: 20px;
+		background-image: url('../images/narrowUnreadDot.png');
+		background-repeat: no-repeat;
+		background-position: right center;
+	}
+	li.item .itemStateText {
+		right: 99999px;
+	}
+	
+	li.item.start .itemStateText {
+		right: 60px;
+	}
+	
+	ul.itemList>li.item.subRowOnTop h3,ul.itemList>li.item.subRowOnTop h4 {
+		font-size: 1.125em;
+		font-weight: normal;
+	}
+	ul.itemList>.item.subRowOnTop .mainBody {
+		padding-top: 1.5em;
+		padding-bottom: 5px;
+	}
+	ul.itemList>.item.subRowOnTop .subRow {
+		top: 1em;
+		line-height: 1.3em;
+		font-size: 0.8125em;
+	}
+}
+@media all and (max-width:480px) {
+	/****Start**********/
+	.containerBoxShadow.frame.left{
+		width: 100%;
+		float: none;
+	}
+	.containerBoxShadow.frame.right{
+		width: 100%;
+		float: none;
+	}
+	#contactCard .facilityServices {
+		float: none;
+		width: 100%;
+	}
+	
+	#contactCard .mainInformation {
+		float: none;
+		width: 100%;
+	}
+}
