@@ -4,14 +4,20 @@ var MVK = {
 		var my = {};
 		
 		my.init = function(params) {
-			this.initHelpIconListener();
+			var that = this;
+			this.params = params;
+			this.initHelpIconListener(that);
 		};
 		
-		my.initHelpIconListener = function() {
+		my.initHelpIconListener = function(my) {
 			
 			$('.title-help-text').mouseover(function() {
-				$(this).next('img').addClass('open');
-			})
+				$(this).find('img').prop('src', my.params.contextPath + my.params.resourcePath + '/images/icons/info_iconblue.png');
+			});
+			
+			$('.title-help-text').mouseout(function() {
+				$(this).find('img').prop('src', my.params.contextPath + my.params.resourcePath + '/images/icons/info_icon.png');
+			});
 			
 			$('.title-help-text').click(function(e) {
 				e.preventDefault();

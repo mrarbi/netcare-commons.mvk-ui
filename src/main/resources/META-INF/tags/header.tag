@@ -49,7 +49,13 @@
 	<script type="text/javascript">
 	
 		$(function() {
-			MVK.GLOBAL.init();
+			
+			var params = {
+				contextPath : '${contextPath}',
+				resourcePath : '${resourcePath}'
+			}
+			
+			MVK.GLOBAL.init(params);
 			MVK.MENU.init();
 		});
 	
