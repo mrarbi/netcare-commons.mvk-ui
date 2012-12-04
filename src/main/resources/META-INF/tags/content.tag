@@ -22,9 +22,14 @@
 <%@ attribute name="backUrl" required="false" %>
 <%@ attribute name="backToWhat" required="false" %>
 <%@ attribute name="plain" required="false" %>
+<%@ attribute name="noMenu" required="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<div id="contentContainer">
+<c:if test="${not empty noMenu}">
+	<c:set var="style" value="margin-left: 0" />
+</c:if>
+
+<div id="contentContainer" style="${style}">
 	<c:choose>
 		<c:when test="${not empty plain}">
 		
