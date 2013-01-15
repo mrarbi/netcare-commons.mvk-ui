@@ -29,30 +29,7 @@
 		<div class="wrapper" style="">
 			<div class="listWrapper">
 				<h2 class="assistiveObject">Fasta Tjänster</h2>
-				<ul id="permanent">
-					<jsp:doBody />
-					<!-- <li class=""><a href="start.html">
-							<span class="icon start"></span>
-							<span class="iconLabel">Start</span></a>
-					</li>
-					
-					<li class="active "><a href="inboxCaseList.html">
-							<span class="icon cases"></span>
-							<span class="iconLabel">Inkorg</span></a>
-					</li>
-					<li><a href="paminnelser.html">
-							<span class="icon reminders"></span>
-							<span class="iconLabel">Påminnelser</span></a>
-					</li>
-					<li class=""><a href="myFacilities.html">
-							<span class="icon facilities"></span>
-							<span class="iconLabel">Vårdmottagningar</span></a>
-					</li>
-					<li class=""><a href="otherServices.html">
-					 		<span class="icon services"></span>
-							<span class="iconLabel">Övriga tjänster</span></a>
-					</li> -->
-				</ul>
+				<jsp:doBody />
 			</div>
 		</div>
 		<div class="topBorder"></div>
