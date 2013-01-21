@@ -24,6 +24,8 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <!-- mvk:header -->
 <head>
+	<!-- Run IE8 -- NOT in compatible mode -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>${title}</title>
 	
